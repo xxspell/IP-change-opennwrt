@@ -14,7 +14,7 @@ This project allows users to change their internet IP address by reconnecting to
 ### Building the Server
 To build the server application, use the following command in the terminal:
 ```bash
-go build -buildmode=exe -o ip-changer-client.exe /client/main.go 
+GOOS=linux GOARCH=arm64 go build -o ip_changer_server /server/main.go
 ```
 
 ### Copy the executable file
@@ -100,8 +100,6 @@ go build -buildmode=exe -o ip-changer-client.exe /client/main.go
 
 ### Use 
 The hotkey to change the IP address is Ctrl + Shift + S.
-```bash
-GOOS=linux GOARCH=arm64 go build -o ip_changer_server /server/main.go
-```
+
 
 
